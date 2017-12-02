@@ -14,8 +14,8 @@ Time spent: **X** hours spent in total
     - Fixed in version: WP 4.2.10
   - [ ] GIF Walkthrough: <a href="https://imgur.com/koN3Nea"><img src="https://i.imgur.com/koN3Nea.gif" title="source: imgur.com" /></a>
   - [ ] Steps to recreate: Login as admin. Go to create a page. Insert XSS into the headline of the page. View page. XSS will demonstrate. 
-  - [ ] Affected source code: <div class="entry-content">
-		<p class="p1"><span class="s1">&lt;IMG SRC=&#8221;#&#8221; ONERROR=&#8221;</span><span class="s2">alert(&#8216;XSS&#8217;)</span><span class="s1">&#8220;/&gt;</span></p>
+  - [ ] Affected source code: .....<div class="entry-content">
+		<p class="p1"><span class="s1">&lt;IMG SRC=&#8221;#&#8221; ONERROR=&#8221;</span><span class="s2">alert(&#8216;XSS&#8217;)</span><span class="s1">&#8220;/&gt;</span></p>.....
 			</div><!-- .entry-content -->
     - [Link 1](https://github.com/WordPress/WordPress/commit/c9e60dab176635d4bfaaf431c0ea891e4726d6e0)
 1. (Required) Vulnerability Name or ID
