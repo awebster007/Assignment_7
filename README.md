@@ -12,7 +12,7 @@ Time spent: **X** hours spent in total
     - Vulnerability types:XSS
     - Tested in version: WP 4.2 
     - Fixed in version: WP 4.2.10
-  - [ ] GIF Walkthrough: https://imgur.com/a/hIvLP
+  - [ ] GIF Walkthrough: <blockquote class="imgur-embed-pub" lang="en" data-id="a/hIvLP"><a href="//imgur.com/hIvLP"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
   - [ ] Steps to recreate: Login as admin. Go to create a page. Insert XSS into the headline of the page. View page. XSS will demonstrate. 
   - [ ] Affected source code: <div class="entry-content">
 		<p class="p1"><span class="s1">&lt;IMG SRC=&#8221;#&#8221; ONERROR=&#8221;</span><span class="s2">alert(&#8216;XSS&#8217;)</span><span class="s1">&#8220;/&gt;</span></p>
