@@ -47,13 +47,13 @@ Time spent: **X** hours spent in total
   
   - [ ] Affected source code:
     - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
-1. (Optional) Vulnerability Name or ID
+1. (Optional) Vulnerability Name or ID: WordPress <= 4.3 - Authenticated Shortcode Tags Cross-Site Scripting (XSS)
   - [ ] Summary: 
-    - Vulnerability types:
-    - Tested in version:
-    - Fixed in version: 
-  - [ ] GIF Walkthrough: 
-  - [ ] Steps to recreate: 
+    - Vulnerability types: XSS
+    - Tested in version: 4.2
+    - Fixed in version: 4.2.5
+  - [ ] GIF Walkthrough: <a href="https://imgur.com/RKAD05s"><img src="https://i.imgur.com/RKAD05s.gif" title="source: imgur.com" /></a>
+  - [ ] Steps to recreate: Go to a posting on WP. Go to inspect element. Scroll down to div entry-content. Add the following code: <p>TEST!!!<figure style="width: 1px;" class="wp-caption alignnone"><figcaption class="wp-caption-text"><a href="</figcaption></figure></a><a href="http://onMouseOver='alert(1)'">Click me</a></p>....Clik on the Click Me. XSS Executes
   - [ ] Affected source code:
     - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
 1. (Optional) Vulnerability Name or ID
